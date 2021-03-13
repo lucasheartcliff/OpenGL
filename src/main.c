@@ -26,7 +26,7 @@ FILE* openFile(){
 void closeFile(FILE* file){
     fclose(file);
 }
-void setColors(){
+void setDefaultConfigs(){
     glClearColor(R, G, B, 1.0);
 	gluOrtho2D(-256.0, 256.0, -256.0, 256.0);
 }
@@ -64,7 +64,7 @@ void main(GLint argc, GLchar** argv){
     glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
     glutInitWindowSize(WIDTH, HEIGHT);
     glutCreateWindow(TITLE);
-    setColors();
+    setDefaultConfigs();
     glutDisplayFunc(draw);
     glutMainLoop();
 }

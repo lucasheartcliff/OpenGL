@@ -1,1 +1,1 @@
-zsh ./compile && ./a.out
+zsh ./compile && ./main
