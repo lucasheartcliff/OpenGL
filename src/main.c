@@ -43,8 +43,6 @@ void draw(){
     glBegin(GL_POINTS);
 
     for (GLint index = 0; index < listSize;index++){
-
-        printf("how\n");
         glVertex2i(pointer[index][0], pointer[index][1]);
     }
 
